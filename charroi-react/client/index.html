@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#159A59">
+<script>
+  // Applique le thème choisi avant l’affichage (évite un flash blanc en mode sombre).
+  try { var th = localStorage.getItem("charroi-theme"); if (th === "light" || th === "dark") document.documentElement.dataset.theme = th; } catch (e) {}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Charroi | Transport de marchandises et location de remorques au Québec</title>
+<meta name="description" content="Publiez une cargaison et comparez les prix de transporteurs vérifiés au Québec, ou louez une remorque directement auprès de notre entreprise.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="root"><div class="bootscreen"><i></i><b>Charroi</b></div></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

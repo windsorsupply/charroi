@@ -1,0 +1,21 @@
+{
+  "name": "charroi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Charroi : transport de marchandises et location de remorques au Québec (React + Node)",
+  "workspaces": ["server", "client"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "concurrently -n server,client -c green,blue \"npm run dev -w server\" \"npm run dev -w client\"",
+    "build": "npm run build -w client",
+    "start": "npm start -w server",
+    "make-admin": "npm run make-admin -w server --",
+    "test": "npm test -w server",
+    "android": "npm run android -w client",
+    "ios": "npm run ios -w client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

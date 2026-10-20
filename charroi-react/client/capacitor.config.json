@@ -1,0 +1,11 @@
+{
+  "appId": "ca.charroi.app",
+  "appName": "Charroi",
+  "webDir": "dist",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "never", "scheme": "Charroi" },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 0, "launchAutoHide": false, "backgroundColor": "#FFFFFF", "showSpinner": false },
+    "FirebaseMessaging": { "presentationOptions": ["badge", "sound", "alert"] }
+  }
+}
