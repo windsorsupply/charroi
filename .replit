@@ -1,0 +1,12 @@
+# Configuration Replit : Node.js 20 + PostgreSQL. L'app est dans le dossier charroi-react.
+modules = ["nodejs-20", "postgresql-16"]
+run = "cd charroi-react && npm install && npm run build && npm start"
+
+[deployment]
+build = ["sh", "-c", "cd charroi-react && npm install && npm run build"]
+run = ["sh", "-c", "cd charroi-react && NODE_ENV=production npm start"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
